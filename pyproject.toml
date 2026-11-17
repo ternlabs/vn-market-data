@@ -13,17 +13,17 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "vn-market-data"
-version = "0.4.0"
+version = "0.4.1"
 description = "Cache-first, source-abstracted market data for the Vietnamese stock market (HOSE/HNX/UPCOM)."
 readme = "README.md"
 license = { file = "LICENSE" }
 # 3.10 is the floor, not a preference: the code uses PEP 604 unions (`dict | None`) and
 # an assignment expression inside a comprehension. Tested on 3.10 and 3.12.
 requires-python = ">=3.10"
-# A GitHub noreply address, not a personal mailbox: this field ends up in the wheel's
-# METADATA and on every mirror that ever indexes it, and it is not a support channel.
-# Bug reports go to the Issues URL below, which is the one that actually gets read.
-authors = [{ name = "Mino", email = "trangcm@users.noreply.github.com" }]
+# The brand, with no email: this field ends up in the wheel's METADATA and on every
+# mirror that ever indexes it, and it is not a support channel. Bug reports go to the
+# Issues URL below, which is the one that actually gets read.
+authors = [{ name = "Tern Labs" }]
 keywords = ["vietnam", "stock-market", "hose", "ohlcv", "market-data"]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -44,9 +44,9 @@ dependencies = ["httpx>=0.24"]
 # three and the README's install line have to move together; the release script only
 # fills an unset placeholder, it will not rewrite a URL that is already here.
 [project.urls]
-Homepage = "https://github.com/trangcm/vn-market-data"
-Source = "https://github.com/trangcm/vn-market-data"
-Issues = "https://github.com/trangcm/vn-market-data/issues"
+Homepage = "https://github.com/ternlabs/vn-market-data"
+Source = "https://github.com/ternlabs/vn-market-data"
+Issues = "https://github.com/ternlabs/vn-market-data/issues"
 
 [project.optional-dependencies]
 # VCISource — the vnstock-backed reader of the Vietcap endpoints the default chain's

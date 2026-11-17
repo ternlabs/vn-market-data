@@ -44,7 +44,7 @@ it will be closed rather than merged once it has been. That close is not a rejec
 ## Working on it locally
 
 ```bash
-git clone https://github.com/trangcm/vn-market-data
+git clone https://github.com/ternlabs/vn-market-data
 cd vn-market-data
 pip install -e ".[vci,dev]"       # ".[dev]" is enough for the tests
 pytest tests/ -q                  # offline: fake sources, temp SQLite, no network
